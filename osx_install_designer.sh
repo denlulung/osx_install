@@ -8,11 +8,11 @@ echo Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Apps that require Passwd
-brew cask install --appdir="/Applications" google-drive-file-stream
 brew cask install --appdir="/Applications" adobe-acrobat-reader
-brew cask install --appdir="/Applications" adobe-creative-cloud
 brew cask install --appdir="/Applications" teamviewer
 brew cask install --appdir="/Applications" zoomus
+brew cask install --appdir="/Applications" google-drive-file-stream
+brew cask install --appdir="/Applications" adobe-creative-cloud
 
 # Core Functionality
 echo Install Core Apps
