@@ -4,12 +4,10 @@ echo Install all AppStore Apps at first!
 read -p "Press any key to continue... " -n1 -s
 echo  '\n'
 
-echo Install Homebrew & wget
+echo Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-brew install wget
-brew install mas
 
-# Apps that require a Passwd
+# Apps that require Passwd
 brew cask install --appdir="/Applications" google-drive-file-stream
 brew cask install --appdir="/Applications" adobe-acrobat-reader
 brew cask install --appdir="/Applications" adobe-creative-cloud
@@ -27,7 +25,6 @@ brew cask install --appdir="/Applications" appcleaner
 
 # Google Slavery
 echo Install Google Apps
-# brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" google-chat
 brew cask install --appdir="/Applications" drawio
