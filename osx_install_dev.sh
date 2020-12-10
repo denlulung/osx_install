@@ -9,10 +9,10 @@ echo Install Homebrew
 
 # Google Slavery
 echo Install Google Apps
-brew cask install --appdir="/Applications" google-drive-file-stream
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" google-chat
-brew cask install --appdir="/Applications" drawio
+brew install --cask google-drive-file-stream
+brew install --cask google-chrome
+brew install --cask google-chat
+brew install --cask drawio
 
 # Dev Env
 echo Install nodejs, watchman, & composer
@@ -21,26 +21,26 @@ brew install watchman
 brew install composer
 
 # Core Dev Tools
-brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" visual-studio-code
-brew cask install --appdir="/Applications" webstorm
-brew cask install --appdir="/Applications" postman
-brew cask install --appdir="/Applications" sequel-pro
-brew cask install --appdir="/Applications" android-studio
-brew cask install --appdir="/Applications" iterm2
-brew cask install --appdir="/Applications" sourcetree
+brew install --cask sublime-text
+brew install --cask visual-studio-code
+brew install --cask webstorm
+brew install --cask postman
+brew install --cask sequel-pro
+brew install --cask android-studio
+brew install --cask iterm2
+brew install --cask sourcetree
 
 # Nice to have
 echo Nice to have
-brew cask install --appdir="/Applications" teamviewer
-brew cask install --appdir="/Applications" rectangle
-brew cask install --appdir="/Applications" the-unarchiver
-brew cask install --appdir="/Applications" appcleaner
-brew cask install --appdir="/Applications" vlc
-brew cask install --appdir="/Applications" spotify
-brew cask install --appdir="/Applications" whatsapp
-brew cask install --appdir="/Applications" microsoft-teams
-brew cask install --appdir="/Applications" zoomus
+brew install --cask teamviewer
+brew install --cask rectangle
+brew install --cask the-unarchiver
+brew install --cask appcleaner
+brew install --cask vlc
+brew install --cask spotify
+brew install --cask whatsapp
+brew install --cask microsoft-teams
+brew install --cask zoomus
 
 # cleanup
 rm -f -r /Library/Caches/Homebrew/*
