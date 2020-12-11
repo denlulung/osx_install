@@ -4,8 +4,8 @@ echo Install all AppStore Apps at first!
 read -p "Press any key to continue... " -n1 -s
 echo  '\n'
 
-echo Install Windsribe
-brew install --cask windsribe
+echo Install Windscribe
+brew install --cask windscribe
 
 # connect VPN region SG
 echo Connect to SG/HK region first!
