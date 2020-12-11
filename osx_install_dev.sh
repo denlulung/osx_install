@@ -4,6 +4,13 @@ echo Install all AppStore Apps at first!
 read -p "Press any key to continue... " -n1 -s
 echo  '\n'
 
+echo Install Windsribe
+brew install --cask windsribe
+
+# connect VPN region SG
+echo Connect to SG/HK region first!
+read -p "Press any key to continue... " -n1 -s
+
 echo Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
