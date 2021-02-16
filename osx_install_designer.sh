@@ -4,36 +4,43 @@ echo Install all AppStore Apps at first!
 read -p "Press any key to continue... " -n1 -s
 echo  '\n'
 
+echo Install Windscribe
+brew install --cask windscribe
+
+# connect VPN region SG
+echo Connect to SG/HK region first!
+read -p "Press any key to continue... " -n1 -s
+
 echo Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+# Google Slavery
+echo Install Google Apps
+brew install --cask google-drive-file-stream
+brew install --cask google-chrome
+brew install --cask google-chat
+brew install --cask drawio
+
 # Apps that require Passwd
-brew cask install --appdir="/Applications" adobe-acrobat-reader
-brew cask install --appdir="/Applications" teamviewer
-brew cask install --appdir="/Applications" zoomus
-brew cask install --appdir="/Applications" google-drive-file-stream
-brew cask install --appdir="/Applications" adobe-creative-cloud
+brew install --cask adobe-acrobat-reader
+brew install --cask teamviewer
+brew install --cask zoomus
+brew install --cask adobe-creative-cloud
 
 # Core Functionality
 echo Install Core Apps
-brew cask install --appdir="/Applications" rectangle
-brew cask install --appdir="/Applications" imageoptim
-brew cask install --appdir="/Applications" handbrake
-brew cask install --appdir="/Applications" the-unarchiver
-brew cask install --appdir="/Applications" vlc
-brew cask install --appdir="/Applications" appcleaner
-
-# Google Slavery
-echo Install Google Apps
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" google-chat
-brew cask install --appdir="/Applications" drawio
+brew install --cask rectangle
+brew install --cask imageoptim
+brew install --cask handbrake
+brew install --cask the-unarchiver
+brew install --cask vlc
+brew install --cask appcleaner
 
 # Nice to have
 echo Install Some additional Apps
-brew cask install --appdir="/Applications" spotify
-brew cask install --appdir="/Applications" whatsapp
-brew cask install --appdir="/Applications" microsoft-teams 
+brew install --cask spotify
+brew install --cask whatsapp
+brew install --cask microsoft-teams 
 
 # cleanup
 rm -f -r /Library/Caches/Homebrew/*
