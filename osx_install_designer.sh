@@ -12,7 +12,7 @@ echo Connect to SG/HK region first!
 read -p "Press any key to continue... " -n1 -s
 
 echo Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Google Slavery
 echo Install Google Apps
@@ -24,7 +24,7 @@ brew install --cask drawio
 # Apps that require Passwd
 brew install --cask adobe-acrobat-reader
 brew install --cask teamviewer
-brew install --cask zoomus
+brew install --cask zoom
 brew install --cask adobe-creative-cloud
 
 # Core Functionality
